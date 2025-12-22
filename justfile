@@ -1,6 +1,6 @@
-# print help
-default:
-	just -l
+# show this help message and exit
+help:
+	just --list
 
 # start service
 up:
