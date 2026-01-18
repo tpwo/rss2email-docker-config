@@ -1,5 +1,18 @@
 # rss2email-docker
 
+> [!WARNING]
+> This project is deprecated. [rss2email](https://github.com/skx/rss2email) running under the hood was deprecated as well. The best alternative is switching to the original `rss2email` written in Python:
+> https://github.com/rss2email/rss2email
+>
+> This repo wasn't updated to work with Python version, as I noticed that running it locally on my daily driver machine is more straightforward than setting it up in LAN.
+>
+> With `cron` you can very easily set up the following to fetch RSS every 15 minutes with the original Python project:
+>
+> ```
+> $ crontab -l
+>   0/15 * * * * ~/.local/bin/r2e run >> /dev/null 2>&1`
+> ```
+
 Run your instance of [rss2email](https://github.com/skx/rss2email) in Docker.
 
 ## Requirements
